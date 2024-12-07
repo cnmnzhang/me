@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Cindy Zhang / Site Title"
+title                    : "Cindy Zhang / Home"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -28,7 +28,7 @@ author:
   location         : "Seattle"
   employer         : "University of Washington"
   uri              : # URL
-  email            : "cindyz1[at]uw.edu" 
+  email            : "cindyz1@uw.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -49,9 +49,9 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  goodreads        : "https://www.goodreads.com/cindyzhang"
-  lastfm           : "http://last.fm/user/cindyzh/"
-  linkedin         : "https://www.linkedin.com/in/cnmnzhang/"
+  goodreads        : "cindyzhang"
+  lastfm           : "cindyzh"
+  linkedin         : "cnmnzhang"
   twitter          : # Username for X / Twitter
 
 # Publication Category - The following the list of publication categories and their headings
@@ -220,6 +220,7 @@ defaults:
       comments: true
       share: true
       related: true
+      future: false
   # _pages
   - scope:
       path: ""

@@ -8,6 +8,5 @@ redirect_from:
 ---
 
 
-A data-driven personal website
-======
 Trying this data-driven personal website out because I'm not a software engineer. 
+Finally I can declare that the reason for the '@' of cnmnzhang is cindy no middle name zhang. Finally. 
