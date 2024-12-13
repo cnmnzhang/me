@@ -1,14 +1,14 @@
 ---
-title: "Paper Title Number 1"
+title: "Haematological setpoints are a stable and patient-specific deep phenotype"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2024-12-11-haematological-setpoints
+excerpt: '...'
+date: 2024-12-11
+venue: 'Nature'
+# slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
+paperurl: 'https://www.nature.com/articles/s41586-024-08264-5'
+citation: 'Foy, B.H., Petherbridge, R., Roth, M.T. et al. Haematological setpoints are a stable and patient-specific deep phenotype. Nature (2024). https://doi.org/10.1038/s41586-024-08264-5'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+The complete blood count (CBC) is an important screening tool for healthy adults and a common test at periodic exams. However, results are usually interpreted relative to one-size-fits-all reference intervals1,2, undermining the precision medicine goal to tailor care for patients on the basis of their unique characteristics3,4. Here we study thousands of diverse patients at an academic medical centre and show that routine CBC indices fluctuate around stable values or setpoints5, and setpoints are patient-specific, with the typical healthy adult’s nine CBC setpoints distinguishable as a group from those of 98% of other healthy adults, and setpoint differences persist for at least 20 years. Haematological setpoints reflect a deep physiologic phenotype enabling investigation of acquired and genetic determinants of haematological regulation and its variation among healthy adults. Setpoints in apparently healthy adults were associated with significant variation in clinical risk: absolute risk of some common diseases and morbidities varied by more than 2% (heart attack and stroke, diabetes, kidney disease, osteoporosis), and absolute risk of all-cause 10 year mortality varied by more than 5%. Setpoints also define patient-specific reference intervals and personalize the interpretation of subsequent test results. In retrospective analysis, setpoints improved sensitivity and specificity for evaluation of some common conditions including diabetes, kidney disease, thyroid dysfunction, iron deficiency and myeloproliferative neoplasms. This study shows CBC setpoints are sufficiently stable and patient-specific to help realize the promise of precision medicine for healthy adults.
