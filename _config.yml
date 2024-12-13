@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Cindy Zhang / Home"
+title                    : "c nmn zhang"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Cindy Zhang"
 description              : &description "personal description"
 url                      : https://cnmnzhang.github.io 
 baseurl                  : "/me" # the subpath of your site, e.g. "/blog"
@@ -24,7 +24,7 @@ author:
   avatar           : "cindyzhang.png"
   name             : "Cindy Zhang"
   pronouns         : "she/her"  
-  bio              : "Hi friends!"
+  bio              : "peace and love"
   location         : "Seattle"
   employer         : "University of Washington"
   uri              : # URL
