@@ -2,7 +2,7 @@
 title: "Assessing Associations Between COVID-19 Symptomology and Adverse Outcomes After Piloting Crowdsourced Data Collection: Cross-sectional Survey Study"
 collection: publications
 category: manuscripts
-permalink: /publication/2022-06-12-Assessing =-Associations
+permalink: /publication/2022-06-12-crowdsourcing-associations
 excerpt: '...'
 date: 2022-06-12
 venue: 'JMIR'
