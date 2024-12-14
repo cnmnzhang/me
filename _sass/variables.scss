@@ -40,14 +40,8 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-body {
-    font-size: $base-font-size;
-}
+// ...existing code...
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 0.75em; // Adjust the size as needed
-}
+$base-font-size: 14px; // Adjust the size as needed
 
-p {
-    font-size: 0.875em; // Adjust the size as needed
-}
+// ...existing code...
