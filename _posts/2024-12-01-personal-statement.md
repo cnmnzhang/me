@@ -1,7 +1,7 @@
 ---
 title: 'Personal Statement'
 date: 2024-12-01
-permalink: /posts/2024/12/blog-post-2/
+permalink: /posts/2024/12/personal-statement/
 tags:
   - reflections
 ---
