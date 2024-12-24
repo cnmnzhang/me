@@ -12,7 +12,6 @@ redirect_from:
 Education
 ======
 * B.S. in Biomedical Engineering and Computer Science, Johns Hopkins, 2023
-* Ph.D. ???
 
 Work experience
 ======
@@ -25,8 +24,8 @@ Skills
 ======
 * Ray of sunshine
 * Great work ethic
-  * Won't steal your job
-  * Hard worker, quick learner
+  * Hard worker
+  * quick learner
 * Great listener
 
 Publications
@@ -50,4 +49,5 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 12 different slack teams
+
 
