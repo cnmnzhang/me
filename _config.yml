@@ -221,6 +221,7 @@ defaults:
       share: true
       related: false
       future: false
+      permalink: /:year/:month/:day/:title/
   # _pages
   - scope:
       path: ""
