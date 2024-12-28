@@ -1,7 +1,9 @@
 ---
 title: 'Happiness'
 date: 2024-12-12
-permalink: /posts/2024/12/Happiness/
+year: 2024
+month: 12
+day: 12
 tags:
   - cool posts
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'on beauty.'
 date: 2024-12-28
-permalink: /posts/2024/12/gp/
 year: 2024
 month: 12
 day: 28

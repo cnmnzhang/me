@@ -1,7 +1,9 @@
 ---
 title: 'Personal Statement'
 date: 2024-12-01
-permalink: /posts/2024/12/personal-statement/
+year: 2024
+month: 12
+day: 01
 tags:
   - reflections
 ---
