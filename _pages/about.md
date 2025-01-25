@@ -8,10 +8,15 @@ redirect_from:
 ---
 
 Hello friends!
-I love how this template is data driven. Figuring it out as we go. Mostly want to use it for blogging purposes. 
-While I want to disclose in the words of Ram Dass "If none of what I say is making any sense, that leaves 2 possibilities: either I'm totally insane or you. And honestly, I’m not really attached to either outcome"
 
-Finally I can declare that cnmnzhang is "cindy no middle name zhang".
+Taking this as an oppotunity to express my thoughtful side,  
+Edited and edited, and never complete. 
+Through authentic and vulnerable writing,  
+A snapshot into my mental preoccupations and joys.  
 
+The iterative, never finished  
+mental palace invites your engagement.  
+To ideas and dreams,  
+To speaking from our heart and chasing the impossible.
 
 
