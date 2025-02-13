@@ -18,7 +18,7 @@ $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
-$sans-serif-narrow          : $sans-serif;
+$sans-serif-narrow           : $sans-serif;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
 
 /* serif typefaces */
@@ -31,6 +31,7 @@ $garamond                   : Garamond, serif;
 $global-font-family         : $calisto;
 $header-font-family         : $calisto;
 $caption-font-family        : $calisto;
+$other-font-family         : $calisto;
 
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px
