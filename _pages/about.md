@@ -7,19 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hello friends!
+Cindy Zhang is a researcher at the University of Washington in Seattle, working with the [Foy Lab](https://foylab.xyz/). Her current research focuses on constructing personalized reference intervals for clinical laboratory test interpretation using adaptive Bayesian frameworks. She has a longstanding interest in leveraging AI/ML techniques to advance health research. She has channeled these interests through work experiences spanning systems engineering at Johnson & Johnson, data engineering at Johns Hopkins Hospitals, and 4 years of translational medicine research with the [TIRI Lab](https://tirilab.github.io/).
 
-Taking this as an oppotunity to express a thoughtful side,  
-I'm attemping to simply present authentic and vulnerable writing,  
-and honestly, it's edited and edited. 
+Cindy Zhang holds a Bachelors of Science in Biomedical Engineering and Computer Science from Johns Hopkins university.
+Originally from Minnesota, she has a deep appreciation for sunshine and fresh air. In her free time, she practices Ashtanga yoga, goes for slow runs, hits PRs on the lifts, and reads!
 
-Happily, I can declare it will never be complete, 
-and because of that, there is so much room for your engagement. 
-
-So here is to ideas and dreams!
-To speaking from our heart and chasing the impossible.
-
-With kindness and integrity,
-Cindy Zhang
-
-
+[CV](http://cnmnzhang.github.io/files/cindyzhang_CV.pdf)
