@@ -5,10 +5,9 @@
   authors: "<strong>Zhang C</strong>, Lam BD, Lucas F, Foy BH"
   venue: "Clinics in Laboratory Medicine"
   year: 2025
-  status: "In Press"
   image: "pub_cdss_hematology.png"
 
-  # Abstract (shortened) — full abstract not publicly available; article is in press
+  #
   abstract: >
     Reviews machine learning and AI methods for clinical decision support in
     hematology, spanning diagnostic algorithms, risk stratification models,
@@ -33,7 +32,9 @@
 
   blurb: "A review of ML and AI approaches for clinical decision support in hematology, covering diagnostic algorithms, risk stratification, and integration into laboratory workflows."
 
-  links: []
+  links:
+    - label: "Paper"
+      url: "https://www.labmed.theclinics.com/article/S0272-2712(25)00065-4/abstract"
 
 # ──────────────────────────────────────────────────────────────
 # Publication 2
@@ -79,7 +80,6 @@
   authors: "Sivakumar N, <strong>Zhang C</strong>, et al."
   venue: "Pulmonary Circulation"
   year: 2025
-  status: "Accepted"
   image: "pub_pvloop.png"
 
   abstract: >
@@ -108,6 +108,10 @@
   seo_headline: "Unsupervised phenotyping of right ventricular pressure-volume loops in pulmonary hypertension using machine learning"
 
   blurb: "We apply machine learning to predict right ventricular pressure-volume loop phenotypes, enabling earlier identification of hemodynamic patterns in pulmonary hypertension."
+
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1002/pul2.70057"
 
 # ──────────────────────────────────────────────────────────────
 # Publication 4
