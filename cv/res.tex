@@ -1,0 +1,107 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Standard preamble using your formatting requirements
+\usepackage[ignoreheadfoot, top=0.5 in, bottom=0.5 in, left=1 in, right=1 in, footskip=1.0 cm]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{fontawesome5}
+\usepackage{ebgaramond}
+\usepackage[colorlinks=true, urlcolor=primaryColor]{hyperref}
+
+% Command for horizontal rule in section titles
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{0pt}{0.4 cm}{0.3 cm}
+
+\renewcommand\labelitemi{$\cdot$}
+
+\newenvironment{highlights}{
+    \begin{itemize}[topsep=0.10 cm, parsep=0.10 cm, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+}{
+    \end{itemize}
+}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    \textbf{\fontsize{24 pt}{24 pt}\selectfont CINDY ZHANG} \\
+    \vspace{0.3 cm}
+    \normalsize
+    \faMapMarker* Seattle, Washington \quad
+    \href{mailto:cnmnzhang@gmail.com}{\faEnvelope[regular] cnmnzhang@gmail.com} \quad
+    \faPhone* 320-266-0887 \quad
+    \href{https://linkedin.com/in/cnmnzhang}{\faLinkedinIn cnmnzhang}
+\end{center}
+
+% --- EDUCATION ---
+\section{EDUCATION}
+\noindent \textbf{University of Washington} \hfill \textit{2025 – 2029 (expected)} \\
+PhD in Biomedical Informatics and Medical Education (BIME) \\
+\textit{Currently enrolled graduate student; meets all UW student staff requirements.}
+
+\vspace{0.2 cm}
+
+\noindent \textbf{Johns Hopkins University} \hfill \textit{2019 – 2023} \\
+BS in Computer Science, BS in Biomedical Engineering with Honors
+
+% --- RELEVANT EXPERIENCE (YOGA) ---
+\section{RELEVANT EXPERIENCE}
+\noindent \textbf{Instructor \& Teaching Assistant} \hfill \textit{June 2025 – Present} \\
+\textit{\href{https://www.theyogashalaseattle.com/}{The Yoga Shala}}, Seattle, WA
+\begin{highlights}
+    \item Currently training and assisting in **Mysore Style Practice**, providing specialized, hands-on adjustments and one-on-one personalized instruction to individual practitioners in a group setting.
+    \item Lead group classes focusing on physical asana and guided meditation, managing class flow for diverse skill levels.
+    \item Collaborated on instruction at various external opportunities outside of the primary studio to expand community outreach and engagement.
+    \item **Registered Yoga Teacher (RYT-200)**: Specialized in anatomy, alignment, and holistic mental/physical well-being.
+\end{highlights}
+
+% --- PROFESSIONAL EXPERIENCE ---
+\section{PROFESSIONAL EXPERIENCE}
+\noindent \textbf{Research Engineer} \hfill \textit{June 2024 – Present} \\
+\textit{University of Washington Medical Center}, Seattle, WA
+\begin{highlights}
+    \item Develop and research adaptive AI models for blood markers, demonstrating deep understanding of human physiology and healthcare data.
+    \item Ensure rigorous safety and data integrity standards within the UW medical ecosystem.
+\end{highlights}
+
+\vspace{0.2 cm}
+
+\noindent \textbf{Team Lead} \hfill \textit{Jan 2021 – Nov 2021} \\
+\textit{Delineo Disease Modeling}
+\begin{highlights}
+    \item Directed a simulation team of 5 people to optimize complex modeling workflows, improving output efficiency by 59\%.
+    \item Managed project timelines, facilitated team communication, and provided leadership to reach community-focused goals.
+\end{highlights}
+
+% --- PUBLICATIONS ---
+\section{PUBLICATIONS}
+\noindent \textbf{Machine Learning and Artificial Intelligence-Based Clinical Decision Support for Modern Hematology}. \textit{Clinics in Laboratory Medicine} (In Press, 2025). Zhang C, Lam BD, Lucas F, Foy BH.
+
+\vspace{0.1 cm}
+
+\noindent \textbf{Haematologic Setpoints Are a Stable and Patient-Specific Deep Phenotype}. \textit{Nature}, Dec 2023. DOI: 10.1038/s41586-024-08264-5. PMID: 37808854. Foy BH, \textbf{Zhang C}, et al.
+
+\vspace{0.1 cm}
+
+\noindent \textbf{OPTIC: Optimizing Patient-Provider Triaging \& Improving Communications in Clinical Operations Using GPT-4 Data Labeling and Model Distillation}. \textit{arXiv}, Feb 2025. Santamaria-Pang A, \textbf{Zhang C}, et al.
+
+\vspace{0.1 cm}
+
+\noindent \textbf{Machine Learning Approach to Predict Emergent RV PV Loop Phenotypes in Pulmonary Hypertension}. \textit{Pulmonary Circulation}, accepted Feb 2025. Sivakumar N, \textbf{Zhang C}, et al.
+
+\vspace{0.1 cm}
+
+\noindent \textbf{Assessing Associations Between COVID-19 Symptomology and Adverse Outcomes After Piloting Crowdsourced Data Collection}. \textit{JMIR Formative Research}, Nov 2022. Flaks-Manov N, \textbf{Zhang C}, et al.
+
+% --- PRESENTATIONS ---
+\section{PRESENTATIONS}
+\noindent \textbf{Modeling Physiologic Setpoints from Blood Tests to Quantify Human Regulation}. \textit{UW Scholars' Studio}, Seattle, WA, Nov 2025 (Speaker). Zhang C.
+
+\vspace{0.1 cm}
+
+\noindent \textbf{Adaptive AI Models for Personalized Laboratory Reference Intervals}. \textit{UW IMDS Symposium}, Seattle, WA, Feb 2025 (Speaker). Zhang C.
+
+\end{document}

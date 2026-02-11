@@ -1,0 +1,37 @@
+# Basic Site Settings
+locale                   : "en-US"
+title                    : "Cindy Zhang"
+title_separator          : "-"
+name                     : &name "Cindy Zhang"
+description              : &description "PhD student in Biomedical Informatics at the University of Washington"
+url                      : https://cindyzhang.info
+baseurl                  : ""
+repository               :
+
+markdown: kramdown
+plugins: []
+
+# Site Author
+author:
+  name             : "Cindy Zhang"
+  pronouns         : "she/her"
+  avatar           : "cindyzhang.png"
+  location         : "Seattle"
+  employer         : "University of Washington"
+  title            : "PhD Student"
+  department       : "Biomedical Informatics & Medical Education"
+  bio              : "PhD student in Biomedical Informatics and Medical Education at the University of Washington. My research focuses on improving the interpretation of routine blood-based laboratory tests to advance personalized and preventive medicine."
+  uri              :
+  email            : "cindyz1@uw.edu"
+
+  # Academic websites
+  arxiv            :
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=RNIMZKEAAAAJ"
+  orcid            : "https://orcid.org/0000-0002-0942-7321"
+
+  # Social media
+  github           : "cnmnzhang"
+  goodreads        : "https://www.goodreads.com/user/show/50752321-cindy"
+  lastfm           : "cindyzh"
+  linkedin         : "cnmnzhang"
+  twitter          : "cnmnzhang"

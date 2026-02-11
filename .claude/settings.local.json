@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:zaidkhan.me)",
+      "WebFetch(domain:jonbarron.info)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "Bash(gh api:*)",
+      "Bash(bundle install:*)",
+      "Bash(ruby --version:*)",
+      "Bash(gem env:*)",
+      "Bash(/opt/homebrew/opt/ruby/bin/bundle install:*)",
+      "Bash(curl:*)",
+      "Bash(/opt/homebrew/opt/ruby/bin/bundle exec jekyll build:*)",
+      "Bash(chmod:*)"
+    ]
+  }
+}

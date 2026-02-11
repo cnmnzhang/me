@@ -1,0 +1,503 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=1 in, % seperation between body and page edge from the top
+    bottom=1 in, % seperation between body and page edge from the bottom
+    left=1 in, % seperation between body and page edge from the left
+    right=1 in, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage{microtype}
+\usepackage{ebgaramond} % Use EB Garamond with pdfLaTeX
+% \usepackage{soul}
+
+\usepackage[
+    pdftitle={Cindy Zhang's CV},
+    pdfauthor={Cindy Zhang},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    % \usepackage[T1]{fontenc} % this breaks sb2nov
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0cm} % set column seperation
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Cindy Zhang - Page \thepage{} of \pageref*{LastPage}}
+}{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    0pt
+}{
+    % top space:
+    0.4 cm
+}{
+    % bottom space:
+    0.3 cm
+} % section title spacing
+
+% \renewcommand\labelitemi{$\circ$} % custom bullet points
+\renewcommand\labelitemi{$\cdot$} % change to simple bullet point
+
+\newenvironment{highlights}{
+    \renewcommand{\labelitemi}{$\cdot$} % Use \cdot for bullet points
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        % leftmargin=0.4 cm + 10pt
+        leftmargin=0cm % Negative value to push bullets into the margin
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{
+    \renewcommand{\labelitemi}{$\cdot$} % Use \cdot for bullet points
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.4 cm + 0.00001 cm
+    }{
+        0.4 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.4 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated: November 2025}\hspace{\widthof{Last updated: November 2025}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+
+    \placelastupdatedtext
+    \begin{header}
+        \textbf{\fontsize{24 pt}{24 pt}\selectfont CINDY ZHANG}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Seattle, Washington}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{mailto:cnmnzhang@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}cnmnzhang@gmail.com}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{tel:+1-320-266-0887}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}320-266-0887}}% 
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/cnmnzhang}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}cnmnzhang}}%
+        % \kern 0.25 cm%
+        % \AND%
+        % \kern 0.25 cm%
+        % \mbox{\hrefWithoutArrow{https://github.com/cnmnzhang}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}cnmnzhang}}%
+        % \mbox{\hrefWithoutArrow{https://cnmnzhang.github.io/me/}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}cnmnzhang.github.io/me}}%
+        % \kern 0.25 cm%
+        % \AND%
+        % \kern 0.25 cm%
+    \end{header}
+
+    \vspace{0.3 cm - 0.3 cm}
+
+
+    \section{EDUCATION}
+        \begin{twocolentry}{
+    \text{2025 – 2029 (expected)}}
+        \textbf{University of Washington}
+    \end{twocolentry}
+
+    \begin{onecolentry}
+        \textbf{PhD in Biomedical Informatics and Medical Education (BIME)} \\
+        Advisor: Dr. Brody Foy \\
+        Research Focus: AI-Enabled Precision Medicine: Modeling Physiologic Setpoints from Blood Tests
+    \end{onecolentry}
+    
+    \vspace{0.40 cm}
+
+    \begin{twocolentry}{
+    \text{2019 – 2023}}
+        \textbf{Johns Hopkins University}
+    \end{twocolentry}
+
+    \begin{onecolentry}
+        \textbf{BS in Computer Science with Honors, BS in Biomedical Engineering with Honors} \\
+        Minor in Applied Mathematics and Statistics \\
+        Member of Habitat for Humanity, Society of Women Engineers \\
+        GPA: 3.59/4.0
+    \end{onecolentry}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+    
+    \section{EXPERIENCE}
+
+        \begin{twocolentry}{
+        \text{June 2024 – Present}    
+            
+        \textit{Seattle, WA}}
+            \textbf{Research Engineer}
+            
+            \textit{University of Washington Medical Center}
+        \end{twocolentry}
+        % Investigated hematologic setpoints for outcomes prediction, developed adaptive Bayesian model for personalized marker reference ranges, hyperparameter optimization balancing estimation and prediction
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed a Bayesian framework to adaptively model personalized reference intervals from time-series laboratory marker data, optimizing hyperparameters for multiple models.
+
+\item Parallelized and optimized pipelines to process gigabytes of diverse laboratory data, evaluating hidden Markov models, state-space models, and Bayesian inference models with model validation and calibration.
+
+\item Applied Kaplan-Meier analysis and Cox proportional-hazard modeling to investigate the prognostic utility of intra-patient hematologic setpoints, validating clinical significance across large datasets.
+      
+            \end{highlights}
+        \end{onecolentry}
+        \vspace{0.4 cm}
+
+\begin{twocolentry}{
+\text{June 2023 – June 2024}    
+\textit{Baltimore, MD}}
+    \textbf{Senior Programmer Analyst}
+    \textit{Precision Medicine Analytics Platform, Johns Hopkins Health System}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+\begin{highlights}
+    \item Deployed InBasket Clinical Message Triage model classifying 100,000+ patient messages, reducing cognitive load on physicians and staff.
+    \item Piloted BERTopic-based retraining to improve interpretability and performance, mitigating model drift.
+    \item Ensured data quality, privacy compliance, and integration consistency across the Precision Medicine Analytics Platform and downstream clinical research workflows.
+    \item Validated WHO Clinical Progression with physicians, reducing runtime by 94\% (3 hours to 11 minutes).
+
+    \item Facilitated Clinical Research Management System (CRMS) to OnCore transition and interoperability.
+\end{highlights}
+\end{onecolentry}
+
+        \vspace{0.4 cm}
+        
+        \begin{twocolentry}{
+        \text{Aug 2022 - May 2023}    
+            
+        \textit{Baltimore, MD}}
+            \textbf{Undergraduate Researcher}
+            
+            \textit{Translational Informatics Research and Innovation Lab}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+            \item Crowdsourced responses for a COVID-19 Qualtrics study using Amazon Mechanical Turk.
+                \item Designed a prototype Android app to assist pregnant women in seeking reliable health information.
+                \item Developed an electronic health record converter between HL7 and Eventflow formats.
+                \item Investigated MyChart logs for patterns of continuity of care and assessed association with sociodemographics and divergent health outcomes. 
+                
+            \end{highlights}
+        \end{onecolentry}
+        \vspace{0.4 cm}
+
+        % Collaborated across engineering disciplines to establish and verify requirements for a robotic surgery system
+        
+        \begin{twocolentry}{
+        \text{May 2022 - Aug 2022}   
+            
+        \textit{Santa Clara, CA}}
+            \textbf{Systems Engineer}
+            
+            \textit{Johnson \& Johnson}
+        \end{twocolentry}
+        
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Executed C++ test suites in a Linux environment to characterize a drift in robotic surgical arm joints
+                \item Drove system shutdown requirements to prevent excessive drift. 
+                \item Verified design documents and requirements across engineering teams. 
+                \item Developed and documented automated scripts to link and populate Airtable databases.
+                \item Refactored JAMA REST API methods and designed an automated error-logging strategy using Python.
+                
+            \end{highlights}
+        \end{onecolentry}
+        \vspace{0.4 cm}
+
+%------------------------------------------------
+                \begin{twocolentry}{
+        \text{Nov 2021 - May 2022}    
+            
+        \textit{Laurel, MD}}
+            \textbf{Researcher and Software Developer}
+            
+            \textit{Applied Physics Laboratory}
+        \end{twocolentry}
+        
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Proofread AI-annotated neural connectomes to verify image segmentation of neurons and synapses.
+                \item Conceptualized game-ification of connectome proofreading to facilitate human reinforcement learning.
+                \item Wrote C\# code to generate 3-D large-scale neuron meshes for the Unity game.
+                
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.4 cm}
+        \begin{twocolentry}{
+        \text{Jan 2021 - Nov 2021}}
+            \textbf{Delineo Disease Modeling}
+        \end{twocolentry}
+
+        \begin{onecolentry}
+        \vspace{0.10 cm}
+            \begin{highlights}
+                \item Implemented a Wells-Riley model to simulate the spread of diseases in a parameterizable town.
+\item Lead a simulation team of 5 people to decrease simulation time for 6 months of infection by 59\%.
+
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{PUBLICATIONS}
+\begin{onecolentry}
+\textbf{Machine Learning and Artificial Intelligence-Based Clinical Decision Support for Modern Hematology}. \textit{Clinics in Laboratory Medicine} (In Press, 2025). Zhang C, Lam BD, Lucas F, Foy BH.
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Haematologic Setpoints Are a Stable and Patient-Specific Deep Phenotype}. \textit{Nature}, Dec 2023. DOI: \href{https://www.nature.com/articles/s41586-024-08264-5}{10.1038/s41586-024-08264-5}. PMID: 37808854. Foy BH, \textbf{Zhang C}, et al.
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{OPTIC: Optimizing Patient-Provider Triaging \& Improving Communications in Clinical Operations Using GPT-4 Data Labeling and Model Distillation}. \textit{arXiv}, Feb 2025. DOI: \href{https://arxiv.org/abs/2503.05701}{10.48550/arXiv.2503.05701}. Santamaria-Pang A, \textbf{Zhang C}, et al.
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Machine Learning Approach to Predict Emergent RV PV Loop Phenotypes in Pulmonary Hypertension}. 
+\textit{Pulmonary Circulation}, accepted Feb 2025. Presented at Design Day, Johns Hopkins University, May 2023.
+Sivakumar N, \textbf{Zhang C}, et al.
+\end{onecolentry}
+
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Assessing Associations Between COVID-19 Symptomology and Adverse Outcomes After Piloting Crowdsourced Data Collection}. \textit{JMIR Formative Research}, Nov 2022. DOI: \href{https://doi.org/10.2196/37507}{10.2196/37507}. PMID: 36343205. Flaks-Manov N, \textbf{Zhang C}, et al.
+\end{onecolentry}
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATIONS
+%----------------------------------------------------------------------------------------
+\section{PRESENTATIONS}
+\begin{onecolentry}
+\textbf{Modeling Physiologic Setpoints from Blood Tests to Quantify Human Regulation}. \textit{UW Scholars' Studio}, Seattle, WA, Nov 2025 (Speaker). Zhang C.
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Adaptive AI Models for Personalized Laboratory Reference Intervals}. \textit{UW IMDS Symposium}, Seattle, WA, Feb 2025 (Speaker). Zhang C. \href{https://youtu.be/x8t8r1Y2yms?t=49}{}
+\end{onecolentry}
+
+
+%----------------------------------------------------------------------------------------
+%	HONORS
+%----------------------------------------------------------------------------------------
+\section{HONORS}
+\begin{onecolentry}
+\textbf{Dean’s List}, Johns Hopkins University \hfill 2021–2023
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Leader of Tomorrow}, GapSummit Global Biotech Leadership Forum \hfill 2024
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Volunteer Recognition Award}, St. Cloud Hospital, MN \hfill 2017
+\end{onecolentry}
+
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{SKILLS}
+        
+\begin{onecolentry}
+\textbf{Programming:} Python (NumPy, Pandas, scikit-learn, PyTorch), SQL, MATLAB, C/C++, Java, JavaScript/TypeScript, LaTeX
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Data Engineering:} ETL design, Azure Data Factory, Databricks (Delta Live Tables), SQL Server, PostgreSQL, Spark, Splunk
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Tools:} Git, Jupyter, Docker, React/Node, BERTopic, GPT-4, LLaMA2
+\end{onecolentry}
+
+\section{CERTIFICATIONS}
+
+\begin{onecolentry}
+\textbf{Registered Yoga Teacher (RYT-200)}, Yoga Alliance \hfill 2025 \\
+Certified through \href{https://www.theyogashalaseattle.com/}{The Yoga Shala}, Seattle
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\textbf{Epic Cogito, Clarity, and Caboodle Certified}, Epic Systems Corporation \hfill 2024 \\
+Credentialed in enterprise analytics, data warehousing, and clinical reporting within the Epic ecosystem.
+\end{onecolentry}
+
+
+
+
+    % \section{Welcome to RenderCV!}
+
+    %     \begin{onecolentry}
+    %         \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
+    %     \end{onecolentry}
+
+    %     \vspace{0.4 cm}
+
+    %     \begin{onecolentry}
+    %         The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
+    %     \end{onecolentry}
+    
+    % \section{Quick Guide}
+
+    % \begin{onecolentry}
+    %     \begin{highlightsforbulletentries}
+
+
+    %     \item Each section title is arbitrary and each section contains a list of entries.
+
+    %     \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
+
+    %     \item Select a section title, pick an entry type, and start writing your section!
+
+    %     \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
+
+
+    %     \end{highlightsforbulletentries}
+    % \end{onecolentry}
+
+
+    
+
+\end{document}

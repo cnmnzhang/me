@@ -1,0 +1,29 @@
+<section id="publications" class="section">
+  <h2>Publications</h2>
+  <ul class="pub-list">
+    {% for pub in site.data.publications %}
+    <li class="pub-item">
+      {% if pub.image %}
+      <div class="pub-thumb">
+        <img src="{{ '/assets/images/' | append: pub.image | relative_url }}" alt="{{ pub.title }}" loading="lazy">
+      </div>
+      {% endif %}
+      <div class="pub-content">
+        <span class="pub-title">{{ pub.title }}</span>
+        <span class="pub-authors">{{ pub.authors }}</span>
+        <span class="pub-venue">{{ pub.venue }}, {{ pub.year }}{% if pub.status %} ({{ pub.status }}){% endif %}</span>
+        {% if pub.links %}
+        <span class="pub-links">
+          {% for link in pub.links %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener">[{{ link.label }}]</a>
+          {% endfor %}
+        </span>
+        {% endif %}
+        {% if pub.blurb %}
+        <p class="pub-blurb">{{ pub.blurb }}</p>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

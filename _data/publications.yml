@@ -1,0 +1,45 @@
+- title: "Machine Learning and Artificial Intelligence-Based Clinical Decision Support for Modern Hematology"
+  authors: "<strong>Zhang C</strong>, Lam BD, Lucas F, Foy BH"
+  venue: "Clinics in Laboratory Medicine"
+  year: 2025
+  status: "In Press"
+  image: "pub_cdss_hematology.png"
+  blurb: "A review of ML and AI approaches for clinical decision support in hematology, covering diagnostic algorithms, risk stratification, and integration into laboratory workflows."
+
+- title: "OPTIC: Optimizing Patient-Provider Triaging & Improving Communications in Clinical Operations Using GPT-4 Data Labeling and Model Distillation"
+  authors: "Santamaria-Pang A, <strong>Zhang C</strong>, et al."
+  venue: "arXiv"
+  year: 2025
+  image: "pub_optic.png"
+  blurb: "We use GPT-4 to label clinical messages and distill the knowledge into smaller models for real-time patient message triage, reducing physician cognitive load at scale."
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2503.05701"
+
+- title: "Machine Learning Approach to Predict Emergent RV PV Loop Phenotypes in Pulmonary Hypertension"
+  authors: "Sivakumar N, <strong>Zhang C</strong>, et al."
+  venue: "Pulmonary Circulation"
+  year: 2025
+  status: "Accepted"
+  image: "pub_pvloop.png"
+  blurb: "We apply machine learning to predict right ventricular pressure-volume loop phenotypes, enabling earlier identification of hemodynamic patterns in pulmonary hypertension."
+
+- title: "Haematologic Setpoints Are a Stable and Patient-Specific Deep Phenotype"
+  authors: "Foy BH, <strong>Zhang C</strong>, et al."
+  venue: "Nature"
+  year: 2024
+  image: "pub_setpoints.png"
+  blurb: "We show that individuals maintain stable, personalized hematologic setpoints over time, establishing a new framework for interpreting routine blood tests as deep phenotypes."
+  links:
+    - label: "Paper"
+      url: "https://www.nature.com/articles/s41586-024-08264-5"
+
+- title: "Assessing Associations Between COVID-19 Symptomology and Adverse Outcomes After Piloting Crowdsourced Data Collection"
+  authors: "Flaks-Manov N, <strong>Zhang C</strong>, et al."
+  venue: "JMIR Formative Research"
+  year: 2022
+  image: "pub_covid.png"
+  blurb: "We crowdsourced COVID-19 symptom data via Amazon Mechanical Turk and assessed associations between symptom profiles and adverse clinical outcomes."
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.2196/37507"
