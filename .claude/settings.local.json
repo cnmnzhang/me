@@ -12,7 +12,8 @@
       "Bash(/opt/homebrew/opt/ruby/bin/bundle install:*)",
       "Bash(curl:*)",
       "Bash(/opt/homebrew/opt/ruby/bin/bundle exec jekyll build:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(dig:*)"
     ]
   }
 }
