@@ -1,0 +1,62 @@
+# ══════════════════════════════════════════════════════════════
+# RESEARCH POSITIONING — generated from publication corpus
+# ══════════════════════════════════════════════════════════════
+
+# ── 1. Research Identity ──────────────────────────────────────
+research_identity: >
+  Cindy Zhang's research develops computational methods for extracting
+  individualized clinical phenotypes from routine and longitudinal health
+  data, with particular emphasis on hematologic biomarkers, hemodynamic
+  assessment, and clinical NLP. Her work spans Bayesian and machine learning
+  approaches to personalized reference intervals, unsupervised phenotype
+  discovery from physiologic time series, and large language model pipelines
+  for operational clinical decision support. A unifying thread is the
+  translation of complex analytical frameworks into clinically deployable
+  tools that improve diagnostic precision and patient stratification.
+
+# ── 2. Competencies & Domains ─────────────────────────────────
+
+core_methodological_competencies:
+  - Bayesian longitudinal modeling
+  - Unsupervised clustering and phenotype discovery
+  - Supervised classification (random forests, BERT)
+  - Large language model distillation (GPT-4 to BERT)
+  - Clinical natural language processing
+  - Personalized reference interval estimation
+  - Risk stratification and survival analysis
+  - Crowdsourced data collection and survey design
+
+core_clinical_domains:
+  - Hematology and complete blood count interpretation
+  - Pulmonary hypertension and right ventricular hemodynamics
+  - Clinical decision support systems
+  - Personalized and preventive medicine
+  - Infectious disease epidemiology (COVID-19)
+  - Patient-provider communication and triage
+
+computational_frameworks:
+  - Python (scikit-learn, pandas, NumPy)
+  - Bayesian inference frameworks
+  - Transformer-based NLP (BERT, GPT-4 API)
+  - Random forest and ensemble methods
+  - K-means and unsupervised clustering pipelines
+  - Epic Nebula Cloud Platform (clinical deployment)
+
+# ── 3. Top 15 SEO Keywords (ranked by cross-publication strength) ──
+
+seo_keywords:
+  - personalized hematologic setpoints
+  - clinical decision support hematology
+  - machine learning clinical phenotyping
+  - longitudinal blood count analysis
+  - patient-specific reference intervals
+  - unsupervised phenotype discovery
+  - LLM distillation clinical NLP
+  - right ventricular pressure-volume loop
+  - pulmonary hypertension risk stratification
+  - GPT-4 clinical data labeling
+  - Bayesian personalized medicine
+  - complete blood count deep phenotype
+  - crowdsourced epidemiological surveillance
+  - laboratory medicine AI integration
+  - hemodynamic machine learning classification

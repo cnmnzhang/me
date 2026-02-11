@@ -13,7 +13,14 @@
       "Bash(curl:*)",
       "Bash(/opt/homebrew/opt/ruby/bin/bundle exec jekyll build:*)",
       "Bash(chmod:*)",
-      "Bash(dig:*)"
+      "Bash(dig:*)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:www.nature.com)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:formative.jmir.org)",
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:onlinelibrary.wiley.com)"
     ]
   }
 }

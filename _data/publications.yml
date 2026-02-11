@@ -1,45 +1,191 @@
+# ──────────────────────────────────────────────────────────────
+# Publication 1
+# ──────────────────────────────────────────────────────────────
 - title: "Machine Learning and Artificial Intelligence-Based Clinical Decision Support for Modern Hematology"
   authors: "<strong>Zhang C</strong>, Lam BD, Lucas F, Foy BH"
   venue: "Clinics in Laboratory Medicine"
   year: 2025
   status: "In Press"
   image: "pub_cdss_hematology.png"
+
+  # Abstract (shortened) — full abstract not publicly available; article is in press
+  abstract: >
+    Reviews machine learning and AI methods for clinical decision support in
+    hematology, spanning diagnostic algorithms, risk stratification models,
+    and strategies for integrating automated tools into laboratory workflows.
+
+  tags:
+    - clinical decision support
+    - hematology
+    - machine learning in laboratory medicine
+
+  # A. Website summary
+  summary: >
+    This review surveys the landscape of machine learning and AI-driven clinical
+    decision support systems in hematology, examining diagnostic classification
+    algorithms, risk stratification frameworks, and practical considerations
+    for embedding automated inference into routine laboratory workflows. It
+    addresses current methodological approaches and identifies gaps in
+    translating model performance to clinical utility.
+
+  # B. SEO headline
+  seo_headline: "Machine learning clinical decision support in hematology: diagnostic algorithms, risk stratification, and laboratory integration"
+
   blurb: "A review of ML and AI approaches for clinical decision support in hematology, covering diagnostic algorithms, risk stratification, and integration into laboratory workflows."
 
+  links: []
+
+# ──────────────────────────────────────────────────────────────
+# Publication 2
+# ──────────────────────────────────────────────────────────────
 - title: "OPTIC: Optimizing Patient-Provider Triaging & Improving Communications in Clinical Operations Using GPT-4 Data Labeling and Model Distillation"
   authors: "Santamaria-Pang A, <strong>Zhang C</strong>, et al."
   venue: "arXiv"
   year: 2025
   image: "pub_optic.png"
+
+  abstract: >
+    Develops an automated patient message triage system using GPT-4 to annotate
+    405,487 clinical messaging encounters, then distills labeling knowledge into
+    a BERT classifier achieving 88.9% accuracy for administrative versus clinical
+    message categorization. The pipeline was deployed on Epic's Nebula Cloud Platform.
+
+  tags:
+    - large language model distillation
+    - clinical NLP
+    - patient message triage
+
+  summary: >
+    OPTIC presents a scalable pipeline for triaging patient portal messages by
+    using GPT-4 as a labeling oracle over 405,000 clinical messaging encounters
+    and distilling the resulting annotations into a lightweight BERT classifier
+    (88.9% accuracy, F1 0.88). Topic modeling further resolves 81 message
+    categories, and the system is deployed within Epic's Nebula Cloud Platform,
+    demonstrating end-to-end feasibility from LLM-based annotation to
+    production-grade clinical NLP.
+
+  seo_headline: "GPT-4 data labeling and BERT distillation for scalable patient message triage in clinical operations"
+
   blurb: "We use GPT-4 to label clinical messages and distill the knowledge into smaller models for real-time patient message triage, reducing physician cognitive load at scale."
+
   links:
     - label: "arXiv"
       url: "https://arxiv.org/abs/2503.05701"
 
-- title: "Machine Learning Approach to Predict Emergent RV PV Loop Phenotypes in Pulmonary Hypertension"
+# ──────────────────────────────────────────────────────────────
+# Publication 3
+# ──────────────────────────────────────────────────────────────
+- title: "An Unsupervised Approach to Derive Right Ventricular Pressure-Volume Loop Phenotypes in Pulmonary Hypertension"
   authors: "Sivakumar N, <strong>Zhang C</strong>, et al."
   venue: "Pulmonary Circulation"
   year: 2025
   status: "Accepted"
   image: "pub_pvloop.png"
+
+  abstract: >
+    Applies unsupervised k-means clustering to 10 pressure-volume loop metrics
+    from 101 patients with suspected pulmonary hypertension, identifying three
+    distinct right ventricular functional phenotypes with differing times to
+    clinical worsening. A random forest classifier predicts these phenotypes
+    from standard hemodynamic and CMR measurements with AUC 0.93.
+
+  tags:
+    - unsupervised phenotyping
+    - pulmonary hypertension
+    - hemodynamic modeling
+
+  summary: >
+    This study applies unsupervised clustering to multi-beat right ventricular
+    pressure-volume loop data from 101 pulmonary hypertension patients,
+    uncovering three hemodynamically distinct RV phenotypes that stratify
+    time to clinical worsening. A random forest model trained on conventional
+    catheterization and cardiac MRI variables predicts these phenotypes with
+    high discrimination (AUC 0.93), with exercise mean pulmonary arterial
+    pressure as the most informative predictor. The work demonstrates that
+    complex research-grade RV functional phenotypes can be approximated using
+    clinically accessible measurements.
+
+  seo_headline: "Unsupervised phenotyping of right ventricular pressure-volume loops in pulmonary hypertension using machine learning"
+
   blurb: "We apply machine learning to predict right ventricular pressure-volume loop phenotypes, enabling earlier identification of hemodynamic patterns in pulmonary hypertension."
 
-- title: "Haematologic Setpoints Are a Stable and Patient-Specific Deep Phenotype"
+# ──────────────────────────────────────────────────────────────
+# Publication 4
+# ──────────────────────────────────────────────────────────────
+- title: "Haematological Setpoints Are a Stable and Patient-Specific Deep Phenotype"
   authors: "Foy BH, <strong>Zhang C</strong>, et al."
   venue: "Nature"
   year: 2024
   image: "pub_setpoints.png"
+
+  abstract: >
+    Demonstrates that routine complete blood count indices fluctuate around
+    stable, individualized setpoints that persist for at least 20 years and
+    distinguish 98% of healthy adults from one another. Setpoint variation
+    associates with differential risk of cardiovascular disease, diabetes,
+    kidney disease, and all-cause mortality, and enables personalized
+    reference intervals with improved diagnostic sensitivity and specificity.
+
+  tags:
+    - longitudinal phenotyping
+    - personalized reference intervals
+    - hematology
+
+  summary: >
+    Using large-scale longitudinal CBC data, this study establishes that each
+    individual's nine hematologic indices converge to stable, patient-specific
+    setpoints capable of distinguishing 98% of healthy adults over a 20-year
+    horizon. These setpoints function as a deep physiologic phenotype:
+    variation across individuals predicts differential absolute risk for
+    cardiovascular events, diabetes, chronic kidney disease, and 10-year
+    all-cause mortality (risk spread exceeding 5%). Personalized reference
+    intervals derived from setpoints improve diagnostic sensitivity and
+    specificity for conditions including iron deficiency, thyroid dysfunction,
+    and myeloproliferative neoplasms.
+
+  seo_headline: "Patient-specific hematologic setpoints as stable deep phenotypes for personalized diagnostics and disease risk stratification"
+
   blurb: "We show that individuals maintain stable, personalized hematologic setpoints over time, establishing a new framework for interpreting routine blood tests as deep phenotypes."
+
   links:
     - label: "Paper"
       url: "https://www.nature.com/articles/s41586-024-08264-5"
 
+# ──────────────────────────────────────────────────────────────
+# Publication 5
+# ──────────────────────────────────────────────────────────────
 - title: "Assessing Associations Between COVID-19 Symptomology and Adverse Outcomes After Piloting Crowdsourced Data Collection"
   authors: "Flaks-Manov N, <strong>Zhang C</strong>, et al."
   venue: "JMIR Formative Research"
   year: 2022
   image: "pub_covid.png"
+
+  abstract: >
+    Deploys a crowdsourced survey on Amazon Mechanical Turk to collect
+    COVID-19 symptom data from 1,254 positive individuals, identifying six
+    distinct symptomology groups via clustering. Associations between symptom
+    profiles, chronic conditions, and adverse outcomes reveal underrecognized
+    risk factors including bladder pain, dry eyes, and loss of appetite.
+
+  tags:
+    - crowdsourced epidemiology
+    - symptom clustering
+    - COVID-19
+
+  summary: >
+    This cross-sectional study pilots a crowdsourced data collection pipeline
+    on Amazon Mechanical Turk, surveying 1,254 COVID-19-positive participants
+    and deriving six symptom clusters through unsupervised grouping. Beyond
+    confirming known risk symptoms (fever, cough, fatigue), the analysis
+    identifies underrecognized symptom associations — bladder pain, cutaneous
+    dryness, appetite loss — and quantifies their relationship to adverse
+    outcomes and underlying chronic conditions, demonstrating the viability
+    of rapid crowdsourced surveillance for pandemic symptom profiling.
+
+  seo_headline: "Crowdsourced COVID-19 symptom clustering and adverse outcome associations via Amazon Mechanical Turk survey"
+
   blurb: "We crowdsourced COVID-19 symptom data via Amazon Mechanical Turk and assessed associations between symptom profiles and adverse clinical outcomes."
+
   links:
     - label: "Paper"
       url: "https://doi.org/10.2196/37507"
