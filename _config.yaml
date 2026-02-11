@@ -3,13 +3,14 @@ locale                   : "en-US"
 title                    : "Cindy Zhang"
 title_separator          : "-"
 name                     : &name "Cindy Zhang"
-description              : &description "PhD student in Biomedical Informatics at the University of Washington"
+description              : &description "Cindy Zhang is a PhD student in Biomedical Informatics at the University of Washington, researching personalized hematologic phenotyping and clinical decision support."
 url                      : https://cindyzhang.info
 baseurl                  : ""
 repository               :
 
 markdown: kramdown
-plugins: []
+plugins:
+  - jekyll-sitemap
 
 # Site Author
 author:

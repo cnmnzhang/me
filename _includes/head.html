@@ -1,8 +1,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
+  <title>Cindy Zhang — PhD Student, Biomedical Informatics, University of Washington</title>
+  <meta name="description" content="Cindy Zhang is a PhD student in Biomedical Informatics at the University of Washington, researching personalized hematologic phenotyping and clinical decision support.">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cindy Zhang — PhD Student, Biomedical Informatics, University of Washington">
+  <meta property="og:description" content="Cindy Zhang is a PhD student in Biomedical Informatics at the University of Washington, researching personalized hematologic phenotyping and clinical decision support.">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cindy Zhang">
+  <meta property="og:image" content="{{ site.url }}/assets/images/cindyzhang.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cindy Zhang — PhD Student, Biomedical Informatics, University of Washington">
+  <meta name="twitter:description" content="Cindy Zhang is a PhD student in Biomedical Informatics at the University of Washington, researching personalized hematologic phenotyping and clinical decision support.">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/cindyzhang.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cindy Zhang",
+    "url": "https://cindyzhang.info",
+    "image": "https://cindyzhang.info/assets/images/cindyzhang.png",
+    "jobTitle": "PhD Student",
+    "description": "PhD student in Biomedical Informatics and Medical Education at the University of Washington, researching personalized hematologic phenotyping and clinical decision support.",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "University of Washington",
+      "department": {
+        "@type": "Organization",
+        "name": "Department of Biomedical Informatics and Medical Education"
+      },
+      "url": "https://www.washington.edu"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Johns Hopkins University"
+    },
+    "sameAs": [
+      "https://scholar.google.com/citations?hl=en&user=RNIMZKEAAAAJ",
+      "https://orcid.org/0000-0002-0942-7321",
+      "https://github.com/cnmnzhang",
+      "https://linkedin.com/in/cnmnzhang",
+      "https://twitter.com/cnmnzhang"
+    ],
+    "knowsAbout": [
+      "Biomedical Informatics",
+      "Hematologic Phenotyping",
+      "Clinical Decision Support",
+      "Bayesian Modeling",
+      "Machine Learning"
+    ],
+    "email": "cindyz1@uw.edu",
+    "workLocation": {
+      "@type": "Place",
+      "name": "Seattle, Washington"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
